@@ -1,20 +1,147 @@
 <!DOCTYPE html> <!-- Declara el tipo de documento con el se va trabajar es decir con HTML 5 -->
 <html lang="en"> <!--Elemento raiz de toda la estructura Hmt y define el idioma por defecto viene ne ingles 
     tiene dos elementps principales cabecera head y el body cuerpo-->
-<head> <!--Es un elemento html que se ubica la configuracion de la pagina lo que no es visible para el usuario final y siempre tiene 3 por defencto-->
-    <meta charset="UTF-8"> <!--define la codificacion de caracteres de mi pagina web
+
+<head>
+  <!--Es un elemento html que se ubica la configuracion de la pagina lo que no es visible para el usuario final y siempre tiene 3 por defencto-->
+  <meta charset="UTF-8"> <!--define la codificacion de caracteres de mi pagina web
     el estandar es UTF-8 para caracteres especiales-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- conjunto de atributos donde name sirve para implementar paginas responsive-->
-    <title>Mi primera página web</title><!-- el title sirve para dar un nombre especifico a la pagina web-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- conjunto de atributos donde name sirve para implementar paginas responsive-->
+  <title>Mi primera página web</title><!-- el title sirve para dar un nombre especifico a la pagina web-->
 </head>
+
 <body> <!--Corresponde al continido visual de la pagina web, es decir botones, texto, imagenes, etc.-->
-     <!-- que sirve para poner encabezados tiene de la h1 al h6 que define el tamaño-->
-      <h1>Mi primera página web</h1>
-      <h3>Carrera de Computación</h3>
-      <h6>Fátima Fiallos</h6>
-      <p>Este es el primer parrafo de mi pagina web ...........</p>
-      <button>
-        Aceptar
-      </button>
+  <!-- que sirve para poner encabezados tiene de la h1 al h6 que define el tamaño-->
+  <!--Para la cabecera se usa es un contenido transversal es decir el logo ese tipo de cabecera esto es algo que se presentara en todoas las paginas-->
+  <header>
+    <h1>Universidad Central del Ecuador</h1>
+    <h3>Carrera de Computación</h3>
+  </header>
+
+  <!--barra de navegacion-->
+  <nav></nav>
+
+  <!--para la informacion principal-->
+  <section>
+    <!--Cabecera de secciones-->
+    <h1>Mi primera página web</h1>
+    <h6>Fátima Fiallos</h6>
+
+    <!--Elementos para parrafos-->
+    <!--Elemento p es para elementos grandes-->
+    <p>Este es el primer parrafo de mi pagina web ...........</p>
+    <span>Parrafos más cortos</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam in ad exercitationem excepturi odio qui,
+      quisquam, amet similique nihil accusantium, esse incidunt delectus nesciunt tempora iure reiciendis cum rerum
+      sapiente?</p>
+
+    <!--Texto-->
+    <strong>Texto de importancia que quiero resalatar</strong>
+    <hr>
+    <b>Textos que no quiero dar relevancia</b>
+    <br> <!--para saltos de lineas \n-->
+    <em>Textos en cursiva con importancia</em>
+    <hr> <!--para lineas de separación-->
+    <i>Texto en cursiva</i> <!--para aquellos sin gran importancia-->
+    <br>
+    <u>Texto subrayado</u>
+    <br>
+    <s>Texto Eliminado</s>
+    <br>
+    <mark>Texto resaltado</mark>
+
+    <!--Listas-->
+    <!--desorden - unordered list (tiene viñetas)-->
+    <ul>
+      <li>Ventas</li>
+      <li>Compras</li>
+      <li>Inventario</li>
+    </ul>
+
+    <!--orden - ordered list (tiene numeración)-->
+    <ol>
+      <li>Ventas</li>
+      <li>Compras</li>
+      <li>Inventario</li>
+    </ol>
+
+    <!--Tablas - grilla: conformada por cabecera (nombres) y cuerpo (datos)-->
+    <table border="1">
+      <hr>
+      <thead> <!--Cabecera de la tabla: primero se declara la fila-->
+        <tr><!--el tr siempre es 1ro y representa la fila-->
+          <!--como contenido de la fina todas las columnas-->
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>CI</th>
+          <th>Genero</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody> <!--Cuerpo de la tabla-->
+        <tr>
+          <td>1</td>
+          <td>Fatima</td>
+          <td>Fiallos</td>
+          <td>1753341344</td>
+          <td>Femenino</td>
+          <td><button>Editar</button></td> <!--se pueden anidar los elementos html-->
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Daniela</td>
+          <td>Teran</td>
+          <td>4564564564</td>
+          <td>Femenino</td>
+          <td><button>Editar</button></td>
+          <br>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--Contenedores: elementos que agrupan contenido que tiene un objetivo comun, obejtivo es que sea mas manipulable-->
+    <div></div>
+
+    <!--Formularios-->
+    <form action=""> <!--action del nombre clave es para generar una accion-->
+      <hr>
+      <label for="id_nombre">Nombre</label>
+      <input type="text" id="id_nombre">
+      <label for="id_password">Password</label>
+      <input type="password" id="id_password">
+      <label for="id_fecha">Fecha Nacimiento</label>
+      <input type="date" id="id_fecha">
+      <label for="id_edad">Edad</label>
+      <input type="number" id="id_edad"> <!--Es imporatnte poner un id para vincularlo con label el input-->
+      <button>Guardar</button>
+    </form>
+
+    <hr>
+
+    <!--Multimedia-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png
+    " alt="no es posible visualizar la imagen" width="60" height="50">
+
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <button>
+      Aceptar
+    </button>
+  </section>
+
+  <!--barra lateral-->
+  <aside></aside>
+
+  <!--Pie de pagina-->
+  <footer>
+    <h3>Todos los Derechos Reservados</h3>
+  </footer>
+
+
 </body>
+
 </html>
