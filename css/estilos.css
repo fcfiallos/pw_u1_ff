@@ -1,0 +1,15 @@
+h1{
+    color: black;
+    background: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: #1b1f17;
+    background-color: #191a74;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-bottom: solid red 1px;
+}
