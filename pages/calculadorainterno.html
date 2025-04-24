@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarColor(elemento, color) {
+            document.getElementById(elemento).style.background=color;
+        }
+
+        function agregarBoton() {
+            //innetHTML -> es el contenido de la estructura que tiene un elemnto HTML
+            document.getElementById('id_espacio').innerHTML='<button>Agregar</button>';
+        }
+
+        function eliminar(idElemento){
+            document.getElementById(idElemento).remove();
+        }
+    </script>
+</head>
+
+<body>
+    <!--esta estructura la hace indexable-->
+    <header>
+        <h1>Calculadora UCE</h1>
+    </header>
+
+    <nav></nav>
+
+    <section>
+        <div id="id_espacio"></div>
+        <label id="id_label_1" for="id_numero_1">Numero 1</label>
+        <input type="number" id="id_numero_1">
+        <label id="id_label_2" for="id_numero_2">Numero</label>
+        <input type="number" id="id_numero_2">
+        <!--Se debe usar comillas simple '' dado que JS no interpreta cuando empieza y finaliza si se usan ""-->
+        <button onclick="cambiarColor('id_label_1','blue')">Cambiar Color 1</button>
+        <button onclick="cambiarColor('id_label_2','yellow')">Cambiar Color 2</button>
+        <button onclick="agregarBoton()">Agregar Elemento</button>
+        <button id="id_error">Error</button>
+        <button onclick="eliminar('id_error')">Eliminar</button>
+    </section>
+
+    <aside></aside>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/calculadora.css">
+</head>
+
+<body>
+    <!--esta estructura la hace indexable-->
+    <header>
+        <h1>Calculadora UCE</h1>
+    </header>
+
+    <nav></nav>
+
+    <section>
+        <label id="id_label_1" for="id_numero_1">Numero 1</label>
+        <input type="number" id="id_numero_1">
+        <label id="id_label_2" for="id_numero_2">Numero</label>
+        <input type="number" id="id_numero_2">
+        <!--Se debe usar comillas simple '' dado que JS no interpreta cuando empieza y finaliza si se usan ""-->
+        <button onclick="document.getElementById('id_label_1').style.background='blue'">Cambiar Color</button>
+
+        <button onclick="document.getElementById('id_label_2').innerText='Numero 2'">Cambiar Texto</button>
+
+        <button onclick="document.getElementById('id_label_1').style.fontSize='40px'">Cambiar Tamaño</button>
+
+        <button onclick="document.getElementById('id_concatenar').innerText = document.getElementById('id_label_1').innerText + document.getElementById('id_label_2').innerText">Concatenar</button>
+
+        <label id="id_concatenar" for=""></label>
+    </section>
+
+    <aside></aside>
+
+    <footer></footer>
+</body>
+
+</html>
