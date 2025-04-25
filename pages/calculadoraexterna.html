@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <!--esta estructura la hace indexable-->
     <header>
         <h1>Calculadora UCE</h1>
     </header>
@@ -18,16 +17,17 @@
 
     <section>
         <div id="id_espacio"></div>
-        <label id="id_label_1" for="id_numero_1">Numero 1</label>
+        <label id="id_label_1" for="id_numero_1">Número 1</label>
         <input type="number" id="id_numero_1">
-        <label id="id_label_2" for="id_numero_2">Numero</label>
+        <label id="id_label_2" for="id_numero_2">Número 2</label>
         <input type="number" id="id_numero_2">
-        <!--Se debe usar comillas simple '' dado que JS no interpreta cuando empieza y finaliza si se usan ""-->
-        <button onclick="cambiarColor('id_label_1','blue')">Cambiar Color 1</button>
-        <button onclick="cambiarColor('id_label_2','yellow')">Cambiar Color 2</button>
-        <button onclick="agregarBoton()">Agregar Elemento</button>
-        <button id="id_error">Error</button>
-        <button onclick="eliminar('id_error')">Eliminar</button>
+        <p id="id_resultado">Resultado: </p>
+        <button onclick="evaluarOperacion('+')">Sumar</button>
+        <button onclick="evaluarOperacion('-')">Restar</button>
+        <button onclick="evaluarOperacion('*')">Multiplicar</button>
+        <button onclick="evaluarOperacion('/')">Dividir</button>
+
+        <button onclick="fundamentos()">Fundamentos de JS</button>
     </section>
 
     <aside></aside>
