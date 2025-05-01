@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <script src="../js/formulario.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formulario">
+            <header>Formulario UCE</header>
+
+            <nav></nav>
+
+            <section>
+                <!--Capta, giuarda, procesa la informacion
+        el action que va ejecutar dentro del form-->
+                <form action="#">
+                    <h2>Ingrese un estudiante</h2>
+                    <p type="Nombre"><input type="text" id="id_nombre"></p>
+                    <!--hace la funcion del label, es valido que se usen los :, no necesario-->
+                    <p type="Apellido"><input type="text" id="id_apellido"></p>
+                    </p>
+                    <p type="Fecha Nacimiento:"><input type="date"></p>
+                    </p>
+                    <p type="Email"><input type="email"></p>
+                    </p>
+                    <p type="Password"><input type="password"></p>
+                    </p>
+                    <div class="centra-boton">
+                        <button onclick="guardar()">Guardar</button>
+                    </div>
+
+                </form>
+            </section>
+
+            <!--<aside></aside> se opcional-->
+
+            <footer></footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

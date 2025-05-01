@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    /*permite manejar la orientacion vertical y horizontal, osea permite mover los elementos*/
+    justify-content: center;
+    /*centra horizontalmente*/
+    align-items: center;
+    /*centra verticalemnte*/
+}
+
+body {
+    background: #59abe3;
+}
+
+/*para que aparezcan los nombre de los input se usar el siguiente pseudo before (antes de que se renderice presente tal cosa)*/
+p::before {
+    content: attr(type);
+    display: block;
+    /*para matener el estandar de uno sobre el otro*/
+    margin: 3px;
+    font-size: 18px;
+    color: #333;
+    /*2095e2*/
+}
+
+input {
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid #bebed2;
+    background: none;
+}
+
+input:focus {
+    outline: none;
+    /* elimina el border por defecto al seleccionar o input */
+    border-bottom: 3px solid #7c7ccf;
+}
+
+h2,
+header {
+    margin: 10px 20px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #075b93;
+}
+
+header{
+    font-size: 35px;
+    width: 260px;
+}
+
+.formulario {
+    border-radius: 10px;
+    background: #e6e6e6;
+    padding: 30px 25px;
+    box-shadow: 10px 10px #397196;
+}
+
+button{
+    background: #a7cae1;
+    padding: 10px;
+    font-size: 18px;
+    color: #06558a;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.centra-boton{
+    display: flex;
+    justify-content: center;
+}
+
