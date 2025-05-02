@@ -12,7 +12,7 @@ body {
 }
 
 /*para que aparezcan los nombre de los input se usar el siguiente pseudo before (antes de que se renderice presente tal cosa)*/
-p::before {
+p:before {
     content: attr(type);
     display: block;
     /*para matener el estandar de uno sobre el otro*/

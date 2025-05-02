@@ -1,0 +1,53 @@
+.contanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    display: grid;
+    /*seccion se manejara como una cuadricula*/
+    grid-template-columns: 75px 75px 75px 75px;
+    /*tamaño(ancho) y nuemro de columans tendra el grid*/
+    grid-template-rows: 75px 75px 75px 75px 75px 75px;
+    /*tamaño y muenro de filas*/
+    padding: 25px;
+    /*border: 1px solid black; orientacion trabajan estilos*/
+    border-radius: 15px;
+    background: #d89a26;
+    box-shadow: 5px 10px #504a14;
+}
+
+body {
+    background: #faf2ae;
+}
+
+.display-calculadora {
+    grid-column: span 4;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #666;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 35px;
+    border: none;
+    background: #c0ba85;
+    font-family: digital-7;
+    font-size: 25px;
+    color: #333;
+}
+
+.columna-2 {
+    grid-column: span 2;
+}
+
+button:active{
+    background: #c9b501;
+}
